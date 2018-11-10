@@ -14,7 +14,7 @@ document.querySelectorAll(".color button").forEach((b) => {
 ////need help with this//////////////////
 document.getElementById("eraser").addEventListener("click", useEraser);
 function useEraser(){
-    penColor.style.backgroundColor="white";
+    penColor = "white";
 }
 colorPallet.addEventListener("change", changeColor);
 document.getElementById("number").addEventListener("change", changePenSize);

@@ -11,27 +11,35 @@
 
 <body>
     <div class="nav">
-            <h2>Paint Tools</h2>
-            Canvas Width:<input type="number"id="canvasWidth" value= 500/>
-            Canvas Height:<input type="number" id="canvasHeight" value=500/>
+        <h2>Paint Tools</h2>
+        Canvas Width:<input type="number" id="canvasWidth" value=500 />
+        Canvas Height:<input type="number" id="canvasHeight" value=500 />
         <div class="color">
-            <label>Color: <input type="color" id="color" value="${penColor}" /></label>
+            <label>Color: <input type="color" id="color" /></label>
             <button id="red"></button>
             <button id="orange"></button>
             <button id="yellow"></button>
             <button id="green"></button>
             <button id="blue"></button>
             <button id="purple"></button>
-            <button id="eraser"><img src= "./images/eraser.png" width= "15px"></button>
+            <button id="eraser"><img src="./images/eraser.png" width="15px"></button>
         </div>
-        <label>Pen Size: <input type="number" id="number" value=${penSize} />
-        <button id="clear">Clear</button></label>
-       
-              
+
+
+        <label>Pen Size: <input type="number" id="number" />
+            <button id="clear">Clear</button></label>
+        <div class="container">
+            <button id="save-button">SAVE</button>
+            <button id="load-button">LOAD</button>
+        </div>
+
+
     </div>
     <div class="canvas-wrapper">
         <div id="canvas" class="canvas"></div>
     </div>
+
+
 
     <script src="js/Painter.js"></script>
 </body>
